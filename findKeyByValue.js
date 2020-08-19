@@ -11,14 +11,14 @@ const assertEqual = (actual, expected) => {
 };
 
 const findKeyByValue = (tvShows, showValue) => {
-    for(show of Object.keys(tvShows)) {
-      if(tvShows[show] === showValue) {
-        return show;
-      }
+  for (let show of Object.keys(tvShows)) {
+    if (tvShows[show] === showValue) {
+      return show;
     }
+  }
 };
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
