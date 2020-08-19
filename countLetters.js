@@ -13,7 +13,6 @@ const assertEqual = (actual, expected) => {
 const counterLetter = (sentence) => {
   const letterArray = sentence.toLowerCase().split(" ").join('').split('').sort();
   let countResult = {};
-  console.log(letterArray);
   for (let letter of letterArray) {
     if (countResult[letter]) {
       countResult[letter] += 1;
