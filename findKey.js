@@ -10,19 +10,33 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-const findKeyByValue = (tvShows, showValue) => {
-  for (let show of Object.keys(tvShows)) {
-    if (tvShows[show] === showValue) {
-      return show;
+const findKey = (object, callback) => {
+  for (let key in object) {
+
+    if (callback(object[key])) {
+      return key;
     }
   }
 };
 
-const bestTVShowsByGenre = {
+const results1 = findKey({
+  "Blue Hill": { stars: 1 },
+  "Akaleri":   { stars: 3 },
+  "noma":      { stars: 2 },
+  "elBulli":   { stars: 3 },
+  "Ora":       { stars: 2 },
+  "Akelarre":  { stars: 3 }
+}, x => x.stars === 2); // => "noma"
+
+assertEqual(results1, "noma");
+
+
+const results2 = findKey({
   sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
-};
+}, x => x === "The Expanse");
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(results2, "sciFi");
+
+
