@@ -1,6 +1,6 @@
 {
   "name": "@klseung/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clone of the lodash library",
   "main": "assertEqual.js",
   "directories": {
