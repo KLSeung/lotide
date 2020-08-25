@@ -10,4 +10,4 @@ const tail = (array) => {
   return newArr;
 };
 
-module.exports = tail
+module.exports = tail;
