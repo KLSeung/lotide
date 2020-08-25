@@ -61,3 +61,5 @@ const studentGrades = [
 // console.log(Object.keys(studentGrades));
 const results3 = map(studentGrades, student => student[Object.keys(student)]["math"]);
 assertArraysEqual(results3, [78, 75, 95]);
+
+module.exports = map;

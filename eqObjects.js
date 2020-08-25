@@ -73,3 +73,5 @@ console.log(eqObjects({ a: { y: {x : 4, p: 5}, z: 1 }, b: 2 }, { a: { y: {x : 3,
 
 // const cd2 = { c: "1", d: ["2", 3, 4] };
 // assertEqual(eqObjects(cd, cd2), false); // => false
+
+module.exports = eqObjects;

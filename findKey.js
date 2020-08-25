@@ -39,4 +39,4 @@ const results2 = findKey({
 
 assertEqual(results2, "sciFi");
 
-
+module.exports = findKey;

@@ -30,3 +30,5 @@ const letterPositions = function(sentence) {
 };
 
 assertArraysEqual(letterPositions("hello my name is Kevin").e, [1, 12, 18]);
+
+module.exports = letterPositions;

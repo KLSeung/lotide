@@ -10,7 +10,7 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-const counterLetter = (sentence) => {
+const countLetters = (sentence) => {
   const letterArray = sentence.toLowerCase().split(" ").join('').split('').sort();
   let countResult = {};
   for (let letter of letterArray) {
@@ -23,6 +23,8 @@ const counterLetter = (sentence) => {
   return countResult;
 };
 
-const result = counterLetter("Hello I am Kevin");
+const result = countLetters("Hello I am Kevin");
 
 assertEqual(result["e"], 2);
+
+module.exports = countLetters;
