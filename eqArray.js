@@ -1,14 +1,14 @@
-const eqArrays = (actual, expected) => {
-  if (actual.length !== expected.length) {
+const eqArrays = (array1, array2) => {
+  if (array1.length !== array2.length) {
     return false;
   } else {
-    for (let i = 0; i < actual.length; i++) {
-      if (Array.isArray(actual[i]) || Array.isArray(expected[i])) {
-        if (!eqArrays(actual[i], expected[i])) {
+    for (let i = 0; i < array1.length; i++) {
+      if (Array.isArray(array1[i]) || Array.isArray(array2[i])) {
+        if (!eqArrays(array1[i], array2[i])) {
           return false;
         }
       } else {
-        if (actual[i] !== expected[i]) {
+        if (array1[i] !== array2[i]) {
           return false;
         }
       }

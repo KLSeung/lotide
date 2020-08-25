@@ -10,10 +10,10 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-const findKeyByValue = (tvShows, showValue) => {
-  for (let show of Object.keys(tvShows)) {
-    if (tvShows[show] === showValue) {
-      return show;
+const findKeyByValue = (object, value) => {
+  for (let key of Object.keys(object)) {
+    if (object[key] === value) {
+      return key;
     }
   }
 };

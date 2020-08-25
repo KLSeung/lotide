@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@klseung/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Clone of the lodash library",
   "main": "assertEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/KLSeung/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kevin Lee <kevin.skyulee@gmail.com> (http://www.kevinsk.com/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/KLSeung/lotide/issues"
